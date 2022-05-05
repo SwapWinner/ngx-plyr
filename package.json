@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:app": "ng build --prod && cp dist/ngx-plyr-app/index.html dist/ngx-plyr-app/404.html",
-    "build:lib": "ng build ngx-plyr --prod && cp README.md dist/ngx-plyr && cp LICENSE.md dist/ngx-plyr",
+    "build:app": "ng build --configuration production && cp dist/ngx-plyr-app/index.html dist/ngx-plyr-app/404.html",
+    "build:lib": "ng build ngx-plyr --configuration production && cp README.md dist/ngx-plyr && cp LICENSE.md dist/ngx-plyr",
     "test:app": "ng test ngx-plyr-app",
     "test:app:ci": "ng test ngx-plyr-app --watch=false --progress=false --browsers=ChromeHeadlessCI",
     "test:lib": "ng test ngx-plyr",
@@ -16,16 +16,16 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~11.2.14",
+    "@angular/animations": "~12.2.16",
     "@angular/cdk": "^11.2.13",
-    "@angular/common": "~11.2.14",
-    "@angular/compiler": "~11.2.14",
-    "@angular/core": "~11.2.14",
-    "@angular/forms": "~11.2.14",
+    "@angular/common": "~12.2.16",
+    "@angular/compiler": "~12.2.16",
+    "@angular/core": "~12.2.16",
+    "@angular/forms": "~12.2.16",
     "@angular/material": "^11.2.13",
-    "@angular/platform-browser": "~11.2.14",
-    "@angular/platform-browser-dynamic": "~11.2.14",
-    "@angular/router": "~11.2.14",
+    "@angular/platform-browser": "~12.2.16",
+    "@angular/platform-browser-dynamic": "~12.2.16",
+    "@angular/router": "~12.2.16",
     "@types/hls.js": "^0.12.4",
     "core-js": "^2.6.9",
     "dashjs": "^2.9.3",
@@ -33,13 +33,13 @@
     "plyr": "^3.5.10",
     "rxjs": "~6.5.4",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.3"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1102.19",
-    "@angular/cli": "~11.2.19",
-    "@angular/compiler-cli": "~11.2.14",
-    "@angular/language-service": "~11.2.14",
+    "@angular-devkit/build-angular": "~12.2.17",
+    "@angular/cli": "~12.2.17",
+    "@angular/compiler-cli": "~12.2.16",
+    "@angular/language-service": "~12.2.16",
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/git": "^7.0.16",
     "@types/jasmine": "~3.6.0",
@@ -53,11 +53,11 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^11.2.4",
+    "ng-packagr": "^12.2.7",
     "protractor": "~7.0.0",
     "semantic-release": "^15.13.18",
     "ts-node": "~7.0.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.8"
+    "typescript": "~4.3.5"
   }
 }
