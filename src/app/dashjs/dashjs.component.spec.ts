@@ -1,19 +1,16 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { TestingModule } from '../testing.module';
-import { DashjsComponent } from './dashjs.component';
+import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
+import { TestingModule } from "../testing.module";
+import { DashjsComponent } from "./dashjs.component";
 
-describe('DashjsComponent', () => {
+describe("DashjsComponent", () => {
   let component: DashjsComponent;
   let fixture: ComponentFixture<DashjsComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [
-        TestingModule,
-      ],
-      declarations: [DashjsComponent]
-    })
-      .compileComponents();
+      imports: [TestingModule],
+      declarations: [DashjsComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -22,7 +19,7 @@ describe('DashjsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
