@@ -17,7 +17,9 @@ export class DashjsPlyrDriver implements PlyrDriver {
   private loaded = false;
 
   constructor(private autoload: boolean) {
-    this.dash.getDebug().setLogToBrowserConsole(false);
+    this.dash.updateSettings({
+      debug: { logLevel: dashjs.Debug.LOG_LEVEL_NONE },
+    });
   }
 
   create(params: PlyrDriverCreateParams) {

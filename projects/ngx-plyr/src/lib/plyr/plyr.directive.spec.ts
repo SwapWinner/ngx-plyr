@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
-import { PlyrComponent } from "./plyr.component";
+import { PlyrDirective } from "./plyr.directive";
 
 describe("PlyrComponent", () => {
-  let component: PlyrComponent;
-  let fixture: ComponentFixture<PlyrComponent>;
+  let component: PlyrDirective;
+  let fixture: ComponentFixture<PlyrDirective>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [PlyrComponent],
+      declarations: [PlyrDirective],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PlyrComponent);
+    fixture = TestBed.createComponent(PlyrDirective);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

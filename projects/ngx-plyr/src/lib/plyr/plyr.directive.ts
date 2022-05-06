@@ -22,7 +22,7 @@ import { PlyrDriver } from "../plyr-driver/plyr-driver";
   selector: "plyr, [plyr]",
   exportAs: "plyr",
 })
-export class PlyrComponent implements AfterViewInit, OnChanges, OnDestroy {
+export class PlyrDirective implements AfterViewInit, OnChanges, OnDestroy {
   private playerChange = new BehaviorSubject<Plyr>(null);
 
   get player(): Plyr {
@@ -104,7 +104,7 @@ export class PlyrComponent implements AfterViewInit, OnChanges, OnDestroy {
     private renderer: Renderer2
   ) {}
 
-  ngOnChanges(changes: { [p in keyof PlyrComponent]?: SimpleChange }) {
+  ngOnChanges(changes: { [p in keyof PlyrDirective]?: SimpleChange }) {
     this.subscriptions.push(
       this.plyrInit.pipe(first()).subscribe((player: Plyr) => {
         const reinitTriggers = [
