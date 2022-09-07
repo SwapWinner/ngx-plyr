@@ -31,18 +31,8 @@ jobs:
       # that's why rebuild is required
       - name: Build lib again
         run: npm run build:lib
-      - name: Coveralls
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Github Pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.GITHUB_PAGES_ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist/ngx-plyr-app
       - name: Publish lib
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPMTOKEN }}
         run: npm run release
