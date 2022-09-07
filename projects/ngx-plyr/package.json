@@ -1,5 +1,6 @@
 {
-  "name": "ngx-plyr",
+  "name": "ngx-plyr3",
+  "version": "0.0.2",
   "keywords": [
     "ngx-plyr",
     "ng-plyr",
@@ -16,8 +17,8 @@
     "url": "https://github.com/Emil-Hammer/ngx-plyr-2"
   },
   "peerDependencies": {
-    "@angular/common": ">=8.0.0",
-    "@angular/core": ">=8.0.0",
+    "@angular/common": ">=14.0.0",
+    "@angular/core": ">=14.0.0",
     "plyr": "^3.5.10"
   },
   "publishConfig": {
