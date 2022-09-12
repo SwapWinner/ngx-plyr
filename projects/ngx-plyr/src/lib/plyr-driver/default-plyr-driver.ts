@@ -3,7 +3,7 @@ import {
   PlyrDriver,
   PlyrDriverCreateParams,
   PlyrDriverDestroyParams,
-  PlyrDriverUpdateSourceParams,
+  PlyrDriverUpdateSourceParams
 } from "./plyr-driver";
 
 export class DefaultPlyrDriver implements PlyrDriver {

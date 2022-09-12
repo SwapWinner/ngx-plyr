@@ -4,7 +4,7 @@ import {
   PlyrDriver,
   PlyrDriverCreateParams,
   PlyrDriverDestroyParams,
-  PlyrDriverUpdateSourceParams,
+  PlyrDriverUpdateSourceParams
 } from "projects/ngx-plyr/src/public_api";
 
 declare const dashjs: any;

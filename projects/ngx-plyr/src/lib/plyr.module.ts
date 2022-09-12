@@ -1,8 +1,12 @@
 import { NgModule } from "@angular/core";
-import { PlyrDirective } from "./plyr/plyr.directive";
+import { PlyrComponent } from './plyr/plyr.component';
 
 @NgModule({
-  declarations: [PlyrDirective],
-  exports: [PlyrDirective],
+  declarations: [
+    PlyrComponent,
+  ],
+  exports: [
+    PlyrComponent,
+  ]
 })
 export class PlyrModule {}

@@ -1,6 +1,6 @@
 import { Component, ViewChild } from "@angular/core";
 import * as Plyr from "plyr";
-import { PlyrDirective } from "projects/ngx-plyr/src/public_api";
+import { PlyrComponent } from "projects/ngx-plyr/src/public_api";
 
 @Component({
   selector: "app-root",
@@ -9,8 +9,8 @@ import { PlyrDirective } from "projects/ngx-plyr/src/public_api";
 })
 export class AppComponent {
   // get the component instance to have access to plyr instance
-  @ViewChild(PlyrDirective, { static: true })
-  plyr: PlyrDirective;
+  @ViewChild(PlyrComponent, { static: true })
+  plyr: PlyrComponent;
 
   // or get it from plyrInit event
   player: Plyr;
