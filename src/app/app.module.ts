@@ -7,7 +7,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { PlyrModule } from "projects/ngx-plyr/src/public_api";
+import { PlyrModule } from "ngx-plyr";
 import { AppComponent } from "./app.component";
 import { DashjsComponent } from "./dashjs/dashjs.component";
 import { HlsjsComponent } from "./hlsjs/hlsjs.component";

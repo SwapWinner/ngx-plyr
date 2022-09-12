@@ -1,4 +1,4 @@
-import * as Plyr from "plyr";
+import Plyr from 'plyr';
 import {
   PlyrDriver,
   PlyrDriverCreateParams,

@@ -26,5 +26,9 @@
         "dist/ngx-plyr/*"
       ]
     }
-  }
+  },
+  "angularCompilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
 }
